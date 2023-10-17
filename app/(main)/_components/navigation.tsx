@@ -3,6 +3,7 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import { ChevronsLeft, MenuIcon } from "lucide-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import React, { ElementRef, useEffect, useRef, useState } from "react";
+import { UserItem } from "./user-item";
 
 const Navigation = () => {
   const router = useRouter();
@@ -117,7 +118,7 @@ const Navigation = () => {
           <ChevronsLeft className="w-6 h-6" />
         </div>
         <div>
-          <p>Action items</p>
+          <UserItem />
         </div>
         <div className="mt-4">
           <p>Documents</p>
